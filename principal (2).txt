@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Minha Primeira Página</title>
+	</head>
+	<body>
+		<h1>Vou aprender muito aqui no curso</h1>
+		<p>Vai depender mais de mim</p>
+		<p>Vou me virar</p>
+		<h2>Alunos com potencial</h2>
+		<ul>
+		   <li style="color:blue;">Aldete</li>
+		   <li>Carlos</li>
+		   <li>Fulano</li>
+		   <li>Ciclano</li>
+		</ul>
+		<ol>
+		   <li style="color:blue;">Aldete</li>
+		   <li>Carlos</li>
+		   <li>Fulano</li>
+		   <li>Ciclano</li>
+		</ol>
+
+		<table border="1">
+			<tr>
+			   <th>coluna1<th/>
+			   <th>coluna2<th/>
+			   <th>coluna3<th/>
+			</tr>
+			<tr>
+			   <td>conteúdo1<td/>
+			   <td>conteúdo2<td/>
+			   <td>conteúdo3<td/>
+			</tr>
+		</table>
+
+		<table border="1">
+			<tr>
+			   <th>Nome<th/>
+			   <th>Endereço<th/>
+			   <th>Telefone<th/>
+			</tr>
+			<tr>
+			   <td>Roberto<td/>
+			   <td>Rua Paulo Afonse número 1052<td/>
+			   <td>61 898598255<td/>
+			</tr>
+		</table>
+	</body>
+</html>

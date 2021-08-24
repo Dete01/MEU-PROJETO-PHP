@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Minha Primeira Página</title>
+
+		<! -- fazer link do css dentro do HTML -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+		<h1>Cadastro</h1>
+		
+		<p>Alunos</p>
+		<p>Alunos com potencial</p>
+		<p>&#128512;</p>
+		<h2>Alunos com potencial</h2>
+		<ul>
+		   <li style="color:blue;">Aldete</li>
+		   <li>Carlos</li>
+		   <li>Fulano</li>
+		   <li>Ciclano</li>
+		</ul>
+		<ol>
+		   <li style="color:blue;">Aldete</li>
+		   <li>Carlos</li>
+		   <li>Fulano</li>
+		   <li>Ciclano</li>
+		</ol>
+
+		<table border="1">
+			<tr>
+			   <th>coluna1<th/>
+			   <th>coluna2<th/>
+			   <th>coluna3<th/>
+			</tr>
+			<tr>
+			   <td>conteúdo1<td/>
+			   <td>conteúdo2<td/>
+			   <td>conteúdo3<td/>
+			</tr>
+		</table>
+
+		<table border="1">
+			<tr>
+			   <th>Nome<th/>
+			   <th>Endereço<th/>
+			   <th>Telefone<th/>
+			</tr>
+			<tr>
+			   <td>Roberto<td/>
+			   <td>Rua Paulo Afonse número 1052<td/>
+			   <td>61 898598255<td/>
+			</tr>
+		</table>
+
+	<!-- Abaixo: quebra de linha, parágrafo, quebra de linha -->
+	<br>
+	<p></p>
+	<hr>
+
+	<!-- criando um formulário -->
+	<form action="#" method="get">
+
+	<fieldset>
+
+	<legend>Meu Primeiro Formulário</legend>
+		<!-- rótulo -->	
+		<label>Nome</label>
+		<input type="text"><br>
+
+		<label>Sexo</label><br>
+		<input type="radio" name="sexo" value="masculino"><label>Masculino</label><br>
+		<input type="radio" name="sexo" value="feminino"><label>Feminino</label><br>
+
+		<label>Estado Civil</label><br>
+		<input type="checkbox" name="civil" value="Desapegado" id="Desapegado"><label for="Desapegado">Desapegado</label><br>
+		<input type="checkbox" name="civil" value="Enrolado" id="Enrolado"><label for "Enrolado">Enrolado</label><br>
+
+		<label>Estado</label>
+		<select id="estado" name="estado">
+			<option>--</option>			
+			<option value="liquido">Líquido</option>
+			<option value="solido">Sólido</option>
+			<option value="gasoso">Gasoso</option>
+		</select>
+
+		<br>
+
+		<label>Recadinho do Coração </label><br>
+<p>&#128151;</p>
+		<textarea rows="10" cols="30" id="mensagem" name="mensagem"></textarea><br>
+
+		<input type="submit" value="Enviar">
+	</fieldset>
+	</form>
+
+	</body>
+</html>

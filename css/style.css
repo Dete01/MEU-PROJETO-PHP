@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+	background-color:rgb(115, 145, 115);
+	font-family: 'Roboto', sans-serif;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	margin: 0;
+
+}
+/*Comentário no CSS*/
+h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+
+}
+header{
+	display: block;
+	background-color:rosybrown;
+	height: 400px;
+	text-align: center;
+}
+
+nav ul{
+	display: inline-flex;
+}
+nav ul li{
+	display: block;
+	padding: 5px;
+
+}
+
+nav ul li a{
+	display: block;
+	background-color:gray;
+	padding: 10px;
+	text-decoration: none;
+
+}
+
+nav ul li a:link, a:visited{
+	color: aliceblue
+
+}
+nav ul li a:hover, a:visited{
+	color: aliceblue
+
+}
+
