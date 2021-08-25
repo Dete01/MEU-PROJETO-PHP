@@ -44,15 +44,21 @@ header{
 	background-color: darkkhaki;
 }
 
-#clubebicho{
+#acomodacoes{
 	display:block;
 	height: 100px;
 	background-color:darkseagreen;
 }
+
+#clubebicho{
+	display:block;
+	height: 100px;
+	background-color:darkkhaki;
+}
 #contato{
 	display:block;
 	height: 100px;
-	background-color: darkkhaki;
+	background-color:darkseagreen;
 }
 
 h2{
