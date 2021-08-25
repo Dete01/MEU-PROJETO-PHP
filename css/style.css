@@ -1,26 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Satisfy&display=swap');
 body{
-	background-color:rgb(115, 145, 115);
-	font-family: 'Roboto', sans-serif;
+	background-color:rgb(205, 241, 205);
+	font-family: 'Rampart One', cursive;
+	font-family: 'Satisfy', cursive;
 	/*font-family: Arial, Helvetica, sans-serif;*/
 	margin: 0;
+	width: 100%;
 
 }
 /*Comentário no CSS*/
 h1{
-	font-family: 'Roboto Slab', serif;
-	font-size: 24px;
+	font-family:'Rampart One', cursive;
+	font: size 52px;
+	color:white;
+	/*padding-top: 10%;*/
+	text-shadow:green 2px 2px;
 
 }
 header{
-	display: block;
-	background-color:rosybrown;
+	display:block;
+	background-color:darkseagreen;
 	height: 400px;
+	text-align:center;
+	background-image:url(../img/chapadasite.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-size: cover;*//*cobriu minha imagem*/
+	/*background-attachment: fixed;*/ /*quando rola a página a imagem fica parada*/
+
+	/*explorar display flex, flex box, grid, */
+}
+
+.menu-principal{
+	display: block;
+	width:100%;
+	/*background-color:darkgreen;*/
+	height: 50px;
+}
+
+#quemsomos{
+	display:block;
+	height: 100px;
+	background-color: darkkhaki;
+}
+
+#clubebicho{
+	display:block;
+	height: 100px;
+	background-color:darkseagreen;
+}
+#contato{
+	display:block;
+	height: 100px;
+	background-color: darkkhaki;
+}
+
+h2{
+	padding-top: 18px;
+	font-size: 28px;
+	font-weight: bold;
 	text-align: center;
 }
 
+
 nav ul{
-	display: inline-flex;
+	display:inline-flex;
 }
 nav ul li{
 	display: block;
@@ -30,18 +74,27 @@ nav ul li{
 
 nav ul li a{
 	display: block;
-	background-color:gray;
+	background-color:lightgray;
 	padding: 10px;
 	text-decoration: none;
 
 }
 
 nav ul li a:link, a:visited{
-	color: aliceblue
+	color:cornsilk;
 
 }
-nav ul li a:hover, a:visited{
-	color: aliceblue
+nav ul li a:hover{
+	color:black;
+	background-color:ghostwhite;
+
+}
+
+footer{
+	padding-top: 100px;
+	text-align: center;
+	height: 200px;
+	background-color:lightgoldenrodyellow;
 
 }
 
