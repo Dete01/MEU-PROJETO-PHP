@@ -11,6 +11,7 @@ body{
 /*Comentário no CSS*/
 h1{
 	font-family:'Rampart One', cursive;
+	font-family: 'Satisfy', cursive;
 	font: size 500px;
 	color:white;
 	/*padding-top: 10%;*/
@@ -41,24 +42,24 @@ header{
 
 #quemsomos{
 	display:block;
-	height: 100px;
+	height: 200px;
 	background-color: darkkhaki;
 }
 
 #acomodacoes{
 	display:block;
-	height: 100px;
+	height: 200px;
 	background-color:darkseagreen;
 }
 
 #clubebicho{
 	display:block;
-	height: 100px;
+	height: 200px;
 	background-color:darkkhaki;
 }
 #contato{
 	display:block;
-	height: 100px;
+	height: 200px;
 	background-color:darkseagreen;
 }
 
