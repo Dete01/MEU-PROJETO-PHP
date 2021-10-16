@@ -12,8 +12,9 @@ $erros_validacao = [];
 
 if (tem_post()) {
     $servico = [
-        'id' => $_POST['id_servico'],
-        'nome' => $_POST['nome_servico']
+        'id' => $_POST['codigo_servico'],
+        'nome' => $_POST['nome_servico'],
+        'descricao' =>$_POST['descricao_servico'] 
     ];
 
     if (strlen($servico['nome']) == 0){
@@ -22,7 +23,7 @@ if (tem_post()) {
     }
 
     if (array_key_exists('descricao', $_POST)) {
-        $tarefa['descricao'] = $_POST['descricao_servico'];
+        $servico['descricao'] = $_POST['descricao_servico'];
     }
 
 
@@ -33,12 +34,13 @@ if (tem_post()) {
     }  
 }
 
-$servico = buscar_servico_para_editar($conexao, $_GET['id_servico']);
+$servico = buscar_servico_para_editar($conexao, $_GET['id']); // não alterar , é id mesmo.
 
-$servico['nome'] = (array_key_exists('nome',$_POST)) ? $_POST['nome_servico'] : $servico['nome'];
+$servico['nome'] = (array_key_exists('nome',$_POST)) ? $_POST['nome_servico'] : $servico['srv_nome'];
 
-$servico['descricao'] = (array_key_exists('descricao',$_POST)) ? $_POST['descricao_servico'] : $servico['descricao'];
+$servico['descricao'] = (array_key_exists('descricao',$_POST)) ? $_POST['descricao_servico'] : $servico['srv_descricao'];
 
+//var_dump($servico);
 
 // Include pode avisar sobre ausência ou erro mas não impede a execução do programa
 include 'template.php';

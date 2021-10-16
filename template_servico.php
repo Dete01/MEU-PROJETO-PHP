@@ -8,7 +8,7 @@
     </head>
     <body>
         <div>
-            <h1>Serviço: <?php echo $servico['nome']; ?></h1>
+            <h1>Serviço: <?php echo $servico['srv_nome']; ?></h1>
             <p>
                 <a href="servicos.php">
                     Voltar para a lista de servicos
@@ -17,7 +17,7 @@
 
             <p>
                 <strong>Descrição:</strong>
-                <?php echo exibe_descricao($servico['descricao']); ?>
+                <?php echo exibe_descricao($servico['srv_descricao']); ?>
             </p>
 
 

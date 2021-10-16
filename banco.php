@@ -42,7 +42,7 @@ function inserir_servico($conexao, $servico){
 
 function buscar_servico_para_editar($conexao,$id){
 
-    $sqlBusca = 'SELECT * FROM servico WHERE srv_id = ' .$id;
+    $sqlBusca = 'SELECT * FROM servico WHERE srv_codigo = ' .$id;
 
     $resultado = mysqli_query($conexao,$sqlBusca);
 
@@ -61,14 +61,14 @@ function editar_servico($conexao, $servico){
 }
 
 function remover_servico($conexao, $id){
-    $sqlDelete = "DELETE FROM servico WHERE srv_id = {$id}";
+    $sqlDelete = "DELETE FROM servico WHERE srv_codigo = {$id}";
 
     mysqli_query($conexao,$sqlDelete);
 }
 
 function buscar_servico($conexao, $id){
 
-    $sqlBusca = "SELECT * FROM servico WHERE srv_id = {$id}";
+    $sqlBusca = "SELECT * FROM servico WHERE srv_codigo = {$id}";
     
     $busca = mysqli_query($conexao,$sqlBusca);
 

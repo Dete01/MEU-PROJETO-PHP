@@ -17,9 +17,9 @@
             <legend><?php echo ($servico['id'] > 0) ? '&#9989 Atualizar Servico' : '&#9200 Cadastrar' ?></legend>
 
             <!-- o input do id fica escondido -->
-            <input type="hidden" name="id_servico" value="<?php echo $servico['id']; ?>">
+            <input type="hidden" name="codigo_servico" value="<?php echo $servico['id']; ?>">
            
-                <form action="#" method="get">
+                
                     <h4 class="mb-3">Serviços Adicionais</h4>
                       <div class="mb-3">
                         <label for="nome_servico" class="form-label">Nome do Serviço</label>
@@ -38,7 +38,7 @@
                                 <?php echo $erros_validacao['descricao']; ?>
                             </span>
                         <?php endif; ?>
-                        <input type="text" class="form-control" id="descricao_servico" name="descricao_servico" value="<?php echo $servico['nome']; ?>" required>
+                        <input type="text" class="form-control" id="descricao_servico" name="descricao_servico" value="<?php echo $servico['descricao']; ?>" required>
                       </div>             
 
                   
@@ -49,7 +49,7 @@
                      </div>
 
 
-                </form>
+             
             </section>
 
         </main>

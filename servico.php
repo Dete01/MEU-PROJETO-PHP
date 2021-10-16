@@ -10,7 +10,7 @@ if(tem_post()){
 
 }
 
-$servico = buscar_servico($conexao, $_GET['id_servico']);
+$servico = buscar_servico($conexao, $_GET['id']); // não remover o id...está correto!
 
 include 'template_servico.php';
 
