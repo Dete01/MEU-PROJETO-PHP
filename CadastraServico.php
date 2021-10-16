@@ -1,23 +1,13 @@
 <form method="post">
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">      
-        <title>Pousada Clemente Pitrez</title>
-    </head>
     <body>
-
         <main class="container-fluid">
+            
             <section class="row mx-5 mt-3 p-3 mb-3 bg-white rounded">
+            <input type="text" name="codigo_servico" value="<?php echo $servico['id']; ?>">
 
-            <legend><?php echo ($servico['id'] > 0) ? '&#9989 Atualizar Servico' : '&#9200 Cadastrar' ?></legend>
 
+           <legend><?php echo ($servico['id'] > 0) ? '&#9989 Atualizar Servico' : '&#9200 Cadastrar' ?></legend>
             <!-- o input do id fica escondido -->
-            <input type="hidden" name="codigo_servico" value="<?php echo $servico['id']; ?>">
            
                 
                     <h4 class="mb-3">Serviços Adicionais</h4>
@@ -51,12 +41,10 @@
 
              
             </section>
-
-        </main>
-       
+        </main>       
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     </body>
-</html>
+
 </form>

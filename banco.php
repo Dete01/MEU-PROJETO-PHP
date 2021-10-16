@@ -54,7 +54,7 @@ function editar_servico($conexao, $servico){
     $sqlBusca = "UPDATE servico SET
                     srv_nome = '{$servico['nome']}',
                     srv_descricao = '{$servico['descricao']}'
-                    WHERE srv_id = {$servico['id']}";
+                    WHERE srv_codigo = {$servico['id']}";
 
     mysqli_query($conexao,$sqlBusca);
 

@@ -15,7 +15,6 @@
             <td><?php echo $servicos['srv_descricao'] ?></td>
             
             <td>
-
                 <a href="editar_servico.php?id=<?php echo $servicos['srv_codigo']; ?>">&#9989 Editar</a>
                 <a href="remover_servico.php?id=<?php echo $servicos['srv_codigo']; ?>">&#10060 Apagar</a>
             </td>
