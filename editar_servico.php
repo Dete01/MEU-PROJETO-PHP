@@ -13,18 +13,12 @@ $erros_validacao = [];
 if (tem_post()) {
     
     $servico = [
-        'id' => $_POST['id'],
+        'id' => $_POST['codigo_servico'],
         'nome' => $_POST['nome_servico'],
-        'descricao' =>$_POST['descricao_servico'], 
+        'descricao' =>$_POST['descricao_servico']
     ];
 
-   // $servico = [
-     //   'id' => $_POST['id'],
-       // 'nome' => $_POST['nome_servico'],
-        //'descricao' =>$_POST['descricao_servico'] 
-   // ];
-
-    var_dump($tem_erros);
+    //var_dump($tem_erros);
 
     if (strlen($servico['nome']) == 0){
         $tem_erros = true;
@@ -35,12 +29,22 @@ if (tem_post()) {
         $servico['descricao'] = $_POST['descricao_servico'];
     }
 
-
     if(!$tem_erros){
-        editar_servico($conexao, $servico);
+        edita_servico($conexao, $servico);      
         header('Location: servicos.php');
         die();
+    
     }  
+
+    //var_dump($tem_erros);
+    
+    //if(!$tem_erros){
+    //$resultado = editar_servico($conexao, $servico);
+      //var_dump($resultado);
+      //  header('Location: servicos.php');
+       // die();
+    //}  
+
 
     //if($tem_erros){
        

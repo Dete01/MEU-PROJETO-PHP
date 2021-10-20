@@ -49,15 +49,15 @@ function buscar_servico_para_editar($conexao,$id){
     return mysqli_fetch_assoc($resultado);    
 }
 
-function editar_servico($conexao, $servico){
+function edita_servico($conexao, $servico){
 
     $sqlBusca = "UPDATE servico SET
                     srv_nome = '{$servico['nome']}',
                     srv_descricao = '{$servico['descricao']}'
                     WHERE srv_codigo = {$servico['id']}";
 
-    mysqli_query($conexao,$sqlBusca);
-
+   mysqli_query($conexao,$sqlBusca);
+       
 }
 
 function remover_servico($conexao, $id){

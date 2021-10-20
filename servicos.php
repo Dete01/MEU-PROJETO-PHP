@@ -15,7 +15,7 @@ $lista_servicos = buscar_servicos($conexao);//Recebe e guarda os resultados de c
 if (tem_post()) {
     $servico = [
         'nome' => $_POST['nome_servico'],
-        'descricao' =>  $_POST['descricao_servico'],
+        'descricao' =>  $_POST['descricao_servico']
     ];
 
     if(strlen($servico['nome']) == 0){
