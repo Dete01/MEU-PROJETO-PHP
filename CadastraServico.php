@@ -3,10 +3,10 @@
         <main class="container-fluid">
             
             <section class="row mx-5 mt-3 p-3 mb-3 bg-white rounded">
-            <input type="text" name="codigo_servico" value="<?php echo $servico['id']; ?>">
+            <input type="hidden" name="codigo_servico" value="<?php echo $servico['id']; ?>">
 
 
-           <legend><?php echo ($servico['id'] > 0) ? '&#9989 Atualizar Servico' : '&#9200 Cadastrar' ?></legend>
+           <legend><?php echo ($servico['id'] > 0) ? ' Atualizar Servico' : ' Cadastrar' ?></legend>
             <!-- o input do id fica escondido -->
            
                 
